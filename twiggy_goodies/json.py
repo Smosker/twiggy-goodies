@@ -101,5 +101,4 @@ class JsonOutput(outputs.Output):
         # to be correctly written to file or terminal
         # in presence of international characters
         text = force_text(msg + '\n')
-        encoded = text.encode('utf-8')
-        self.stream.write(encoded)
+        self.stream.write(text)
